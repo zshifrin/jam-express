@@ -1,0 +1,22 @@
+<div class="form">
+<% if flash[:notice] %>
+	<div class="notice">
+		<%= flash[:notice] %>
+	</div>
+<% end %>
+
+<% if flash[:error] %>
+	<div class="error">
+		<%= flash[:error] %>
+	</div>
+<% end %>
+
+<h1>Sign In Below</h1>
+<form action="/login" method="POST">
+    <input type="text" name="sign_in_field" placeholder="Username" class="form-control">
+    <br />
+	<input type="password" name="password" placeholder="Password" class="form-control">
+	<br />
+	<input type="submit" value="Submit" id="submitButton" class="btn btn-primary">
+</form>
+</div>

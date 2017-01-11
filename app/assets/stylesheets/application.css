@@ -14,172 +14,49 @@
  *= require_self
  */
 
- #main {
- 	background-color: #E17811; 
- }
+#main {
+	/*background-color: #E17811; */
+}
+
 #main-nav {
-    height:  170px;
+/*    height: 100px;
     background-color: #0D646A;
     border: none;
     margin-bottom: 0px;
+    border-radius: 0;*/
 }
 
-#logo img {
-    width: 155px;
-}
 
 #main-nav .nav {
-    padding-top: 120px;
+    /*padding-top: 120px;*/
 }
 
-.navbar a:visited,
-.navbar a:active {
-    color: #000;
+.navbar-default {
+	height: 80px;
 }
 
-.navbar-default .navbar-nav > .active > a {
-    background-color: #ffd27f;
+.navbar-default .nav {
+	/*margin-top: 20px;*/
 }
 
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:active,
-.navbar-default .navbar-nav > .active > a:visited {
-    background-color: orange;
+.navbar-brand {
+	max-width: 80px;
 }
 
-.navbar-default .navbar-nav>li>a,
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:active,
-.navbar-default .navbar-nav>li>a:visited {
-    color: #000;
+.navbar-brand img {
+	width: 100%;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-    color: #ff0080;
+.navbar-default,
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	background: #0D646A;
+	border-radius: 0;
+	border: 0;
 }
 
-#dropmenu:hover,
-#dropmenu:focus,
-#dropmenu:active {
-    background-color: orange;
-}
 
-#anotherdrop:hover,
-#anotherdrop:focus,
-#anotherdrop:active {
-    background-color: orange;
-}
-
-.navButton {
-    font-size: 25px;
-    color: #000;
-}
-
-.form {
-    width: 300px;
-    height: 500px;
-    margin: 0 auto;
-}
-
-#site-footer {
-    margin-top: 0px;
-    min-height: 150px;
-    font-size: 17px;
-    color: #ffebc0;
-    padding-top: 40px;
-    background: #0D646A;
-}
-
-.im-centered {
-    margin-left: 10%;
-}
-
-.fa {
-        font-size: 40px;
- }
-
-a {
-   color: #f48042 ;
-   text-decoration: none;
-}
-
-a:focus, a:hover {
-   color: white;
-}
-
-.fa-facebook {
-    margin-right: 15px;
-}
-
-.fa-twitter {
-    margin-right: 15px;
-}
-
-.fa-paypal {
-    margin-right: 15px;
-
-}
-
-.home-posts {
-    background-color: #fcf0d6;
-    margin-bottom: 5px;
-    border: 2px solid #333333;
-}
-
-#postBodyForm {
-    margin: 10px 0 10px 0;
-}
-
-#profileBio {
-    margin-top: 10px;
-}
-
-#edit-profile-btn {
-    margin-bottom: 10px;
-}
-
-#follow-btn {
-    background-color: #DC5383;
-    border-color: none;
-    color: #ffffff;
-}
-
-#follow-btn:hover {
-    background-color: #ba466f;
-    border-color: #84314e;    
-}
-
-#delete-account {
-    position: relative;
-    top: -38px;
-    font-size: 16px;
-}
-
-#bottomstrip {
-    width: 100%;
-    height: 40px;
-    background-color: #17383A ;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 40px;
-}
-
-.btn-primary {
-    background-color: #e50073;
-    background-color: #DC5383;
-    border-color: #84314e;
-    font-size: 20px;
-}
-
-.btn-primary:hover {
-    background-color: #cc0066;
-    background-color: #ba466f;
-    border-color: #84314e;
-}
-
-#main {
-    padding-top: 40px;
-    min-height: 380px;
+.navbar-default .navbar-collapse {
+	margin-top: 28px;
+	background: #0D646A;
 }

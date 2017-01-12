@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  seat_type: MyString
+  destination: MyString
+  start_point: MyString
+  notes: MyText
+  payment: MyString
+
+two:
+  seat_type: MyString
+  destination: MyString
+  start_point: MyString
+  notes: MyText
+  payment: MyString

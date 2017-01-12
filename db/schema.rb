@@ -10,13 +10,62 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170110163556) do
+ActiveRecord::Schema.define(version: 20170112212400) do
+
+  create_table "bands", force: :cascade do |t|
+    t.string   "name"
+    t.string   "logo"
+    t.integer  "concert_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "concerts", force: :cascade do |t|
+    t.integer  "band_id"
+    t.datetime "date"
+    t.string   "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "friends", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "target_id"
+  end
+
+  create_table "parties", force: :cascade do |t|
+    t.string   "when"
+    t.datetime "time"
+    t.string   "location"
+    t.text     "details"
+    t.string   "cover"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rides", force: :cascade do |t|
+    t.string   "seat_type"
+    t.string   "destination"
+    t.string   "start_point"
+    t.text     "notes"
+    t.string   "payment"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "password"
+    t.string   "avatar"
+    t.string   "location"
+    t.text     "bio"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
 end

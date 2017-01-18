@@ -14,8 +14,8 @@
  *= require_self
  */
 
-#main {
-	/*background-color: #E17811; */
+body {
+	background-color: #E17811; 
 }
 
 #main-nav {
@@ -37,6 +37,10 @@
 
 .navbar-default .nav {
 	/*margin-top: 20px;*/
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #0F1217;
 }
 
 .navbar-brand {

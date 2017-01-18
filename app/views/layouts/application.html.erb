@@ -31,8 +31,8 @@
             <% if user_signed_in? %>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="/profile">Profile <span class="sr-only">(current)</span></a></li>
-                        <li><a href="/index">Index</a></li>
+                        <li><a href="/index">Index <span class="sr-only">(current)</span></a></li>
+                        <li><%= link_to "Profile", user_path(current_user.id) %></li>
                         <li><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
                     </ul>
                 </div>

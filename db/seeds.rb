@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Band.destroy_all
+
+Band.create([{ name: 'Widespread Panic'}, {name: 'String Cheese Incident'}, {name: 'Phish'}])

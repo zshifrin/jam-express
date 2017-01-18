@@ -1,0 +1,14 @@
+<h1>Profile</h1>
+
+<div class="avatar-big">
+    <a href="<%= user_path(current_user.id) %>">
+        <%= image_tag current_user.avatar.url(:medium) %>
+    </a>
+</div>
+<div class="user-details">
+	<%= raw @p.inspect %>
+	<%= @user.inspect %>
+    <h1><%= @user.name %></h1>
+    <div><%= @user.email %></div>
+    <div><%= @user.location %></div>
+</div>

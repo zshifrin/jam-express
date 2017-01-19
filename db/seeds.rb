@@ -11,11 +11,13 @@ Band.create([{ name: 'Widespread Panic'}, {name: 'String Cheese Incident'}, {nam
 
 Concert.destroy_all
 
-Concert.create([{ band_id: Band.first.id, date: Time.new(2017,2,27), location: 'Quintana Roo, Mexico', venue: 'Riviera Maya'},
+Concert.create([
+  { band_id: Band.first.id, date: Time.new(2017,2,27), location: 'Quintana Roo, Mexico', venue: 'Riviera Maya'},
 	{ band_id: Band.first.id, date: Time.new(2017,2,28), location: 'Quintana Roo, Mexico', venue: 'Riviera Maya'},
 	{ band_id: Band.first.id, date: Time.new(2017,3,1), location: 'Quintana Roo, Mexico', venue: 'Riviera Maya'},
   { band_id: Band.first.id, date: Time.new(2017,3,2), location: 'Quintana Roo, Mexico', venue: 'Riviera Maya'},
-  { band_id: Band.first.id, date: Time.new(2017,3,3), location: 'Quintana Roo, Mexico', venue: 'Riviera Maya'},])
+  { band_id: Band.first.id, date: Time.new(2017,3,3), location: 'Quintana Roo, Mexico', venue: 'Riviera Maya'},
+])
 
 User.destroy_all
 

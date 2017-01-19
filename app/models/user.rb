@@ -8,6 +8,10 @@ class User < ApplicationRecord
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\z/
 
   has_many :rides
-  has_many :concerts
+  has_and_belongs_to_many :concerts
   has_many :parties
+
+  def attending?(concert)
+    concert.users.include? self
+  end
 end

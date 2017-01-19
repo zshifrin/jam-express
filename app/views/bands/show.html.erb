@@ -1,0 +1,22 @@
+<h1> <%= @band.name %> </h1>
+
+
+
+<table class="table table-hover">
+	<tr>
+		<td>Date</td>
+		<td>Location</td>
+		<td>Venue</td>
+		<td>Attending</td>
+	</tr>
+<% @band.concerts.each do |concert|%>
+	<tr>
+		<td><%= concert.time %></td>
+		<td><%= concert.location %></td>
+		<td><%= concert.venue %></td>
+		<td><input type="checkbox" name="attending" value="check"></td>
+	</tr>
+<% end %>
+</table>
+
+<input type="submit" value="Submit">

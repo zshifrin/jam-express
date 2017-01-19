@@ -1,0 +1,32 @@
+<%= form_for(ride) do |f| %>
+    <% if ride.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(ride.errors.count, "error") %> prohibited this ride from being saved:</h2>
+            <ul>
+                <% ride.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+        <%= f.label :destination %>
+        <%= f.text_field :destination %>
+    </div>
+
+    <div class="field">
+        <%= f.label :start_point %>
+        <%= f.text_field :start_point %>
+    </div>
+
+    <div class="field">
+        <%= f.label :notes %>
+        <%= f.text_area :notes, size: "60x12" %>
+    </div>
+
+    <div class="actions">
+        <%= f.submit %>
+    </div>
+<% end %>
+

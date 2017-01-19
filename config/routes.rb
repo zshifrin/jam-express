@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :rides
+  resources :concerts
   # devise_for :users
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout'}
   # devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout'}, controllers: { registrations: 'registrations' }
@@ -18,9 +20,6 @@ Rails.application.routes.draw do
 
   get '/index' => 'pages#index'
 
-  # get '/band' => 'pages#band'
-
-  get '/concert' => 'pages#concert'
 
 
 end

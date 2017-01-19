@@ -14,7 +14,7 @@
 		<td><%= concert.time %></td>
 		<td><%= concert.location %></td>
 		<td><%= concert.venue %></td>
-		<td><input type="checkbox" name="attending" value="check"></td>
+		<td><input type="checkbox" name="attending" value="<%= concert.id %>" <%= current_user.attending?(concert) ? 'checked' : '' %>></td>
 	</tr>
 <% end %>
 </table>

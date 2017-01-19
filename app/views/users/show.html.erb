@@ -2,7 +2,7 @@
 
 <div class="avatar-big">
     <a href="<%= user_path(current_user.id) %>">
-        <%= image_tag current_user.avatar.url(:medium) %>
+        <%= user_avatar(current_user) %>
     </a>
 </div>
 <div class="user-details">
